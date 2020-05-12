@@ -1,29 +1,52 @@
 * {
     margin: 0;
     padding: 10;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgba(235, 235, 235, 0.932);
+    font-family: neue-haas-grotesk-display, sans serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(22, 22, 22);
+    cursor: crosshair;
     
 }
 
 
 body {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(255, 255, 255);
     padding-left: 5%;
     padding-top: 5%;
+    font-family: neue-haas-grotesk-display, sans serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 1);
+    z-index: 100;
+}
 a {
-    color: rgba(183, 255, 75, .8);
-    text-decoration: none;
+    color: rgba(22, 22, 22, 0.932);
+}
+
+iframe {
+    border-color:  red;
+    border-width: 5px;
+    border-style: solid;
+    
 }
 
 a:hover{
-    color: rgba(183, 255, 75, .5);
+    color: rgba(255, 0, 255, 1);
+    text-decoration: none;
 }
 
 h1 {
-    color:rgba(255, 0, 0, 0.9);
+    color:rgb(22, 22, 22);
     font-size: 2rem;
     padding-bottom: 5%;
 }
@@ -49,7 +72,7 @@ li {
 }
 
 #smirkie {
-    color: rgba(183, 255, 75, .8);
+    color: rgb(252, 252, 252);
     padding-top: 5%;
     font-size: 5rem;
 }
@@ -62,11 +85,18 @@ li {
 
 @keyframes pulse{
     0% {
-        background-color:rgba(183, 255, 75, .8);
+        background-color:rgb(255, 255, 255);
     }
 
-    100%{
-        background-color: rgba(255, 0, 0, 0.9);
+    50% {
+        background-color: rgb(22, 22, 22);
     }
+    100%{
+        background-color: rgb(22, 22, 22);
+    }
+}
+
+#divider {
+    text-align: center;
 }
 
