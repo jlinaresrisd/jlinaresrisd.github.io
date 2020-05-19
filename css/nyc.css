@@ -1,5 +1,5 @@
 * {
-    font-family: Roc Grotesk;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
     color:rgba(0, 0, 0, 0.932);
@@ -62,7 +62,6 @@ h3 {
     border-bottom: 10px;
     border-radius: 5px;
     text-align: center;
-    font-family: Roc Grotesk;
     color:red;
     font-size: 2.5em;
     padding-top: 10px;
@@ -74,15 +73,21 @@ h3 {
 }
 
 p {
-    padding-left: 2%;
+    padding-left: 10%;
     padding-right: 50%;
     padding-block-end:2%;
     font-size: 1.rem;
+    
 }
 
-#topbutton {
-    margin-left: 95%;
-    padding-bottom: 3%;  
+#topbutton { 
+    position: fixed;
+    left: 95%;
+    top: 90%;
 }
 
-
+#mapbox{
+    text-align: center;
+    border-color: red;
+    border-width: 5px;
+}
